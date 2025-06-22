@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43B7E1342DDA8218002A6876 /* Core Motion Data Collector Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 43B7E1332DDA8218002A6876 /* Core Motion Data Collector Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43B7E1352DDA8218002A6876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B7E1272DDA8217002A6876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43B7E1322DDA8218002A6876;
+			remoteInfo = "Motion Data Collector Watch App";
+		};
+		43B7E1432DDA8218002A6876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B7E1272DDA8217002A6876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43B7E1322DDA8218002A6876;
+			remoteInfo = "Motion Data Collector Watch App";
+		};
+		43B7E14D2DDA8218002A6876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B7E1272DDA8217002A6876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43B7E1322DDA8218002A6876;
+			remoteInfo = "Motion Data Collector Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43B7E1592DDA8218002A6876 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				43B7E1342DDA8218002A6876 /* Core Motion Data Collector Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		43B7E12D2DDA8218002A6876 /* Core Motion Data Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Motion Data Collector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B7E1332DDA8218002A6876 /* Core Motion Data Collector Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Motion Data Collector Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B7E1422DDA8218002A6876 /* Core Motion Data Collector Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core Motion Data Collector Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B7E14C2DDA8218002A6876 /* Core Motion Data Collector Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core Motion Data Collector Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B7E1642DDA8F70002A6876 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.4.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		43B7E1372DDA8218002A6876 /* Core Motion Data Collector watchOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Core Motion Data Collector watchOS";
+			sourceTree = "<group>";
+		};
+		43B7E1452DDA8218002A6876 /* Core Motion Data Collector Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Core Motion Data Collector Tests";
+			sourceTree = "<group>";
+		};
+		43B7E14F2DDA8218002A6876 /* Core Motion Data Collector UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Core Motion Data Collector UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43B7E1302DDA8218002A6876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B7E13F2DDA8218002A6876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B7E1492DDA8218002A6876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43B7E1262DDA8217002A6876 = {
+			isa = PBXGroup;
+			children = (
+				43B7E1372DDA8218002A6876 /* Core Motion Data Collector watchOS */,
+				43B7E1452DDA8218002A6876 /* Core Motion Data Collector Tests */,
+				43B7E14F2DDA8218002A6876 /* Core Motion Data Collector UITests */,
+				43B7E1632DDA8F70002A6876 /* Frameworks */,
+				43B7E12E2DDA8218002A6876 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43B7E12E2DDA8218002A6876 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43B7E12D2DDA8218002A6876 /* Core Motion Data Collector.app */,
+				43B7E1332DDA8218002A6876 /* Core Motion Data Collector Watch App.app */,
+				43B7E1422DDA8218002A6876 /* Core Motion Data Collector Watch AppTests.xctest */,
+				43B7E14C2DDA8218002A6876 /* Core Motion Data Collector Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43B7E1632DDA8F70002A6876 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43B7E1642DDA8F70002A6876 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43B7E12C2DDA8218002A6876 /* Core Motion Data Collector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B7E15A2DDA8218002A6876 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector" */;
+			buildPhases = (
+				43B7E12B2DDA8218002A6876 /* Resources */,
+				43B7E1592DDA8218002A6876 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43B7E1362DDA8218002A6876 /* PBXTargetDependency */,
+			);
+			name = "Core Motion Data Collector";
+			packageProductDependencies = (
+			);
+			productName = "Motion Data Collector";
+			productReference = 43B7E12D2DDA8218002A6876 /* Core Motion Data Collector.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		43B7E1322DDA8218002A6876 /* Core Motion Data Collector Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B7E1562DDA8218002A6876 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector Watch App" */;
+			buildPhases = (
+				43B7E12F2DDA8218002A6876 /* Sources */,
+				43B7E1302DDA8218002A6876 /* Frameworks */,
+				43B7E1312DDA8218002A6876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				43B7E1372DDA8218002A6876 /* Core Motion Data Collector watchOS */,
+			);
+			name = "Core Motion Data Collector Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Motion Data Collector Watch App";
+			productReference = 43B7E1332DDA8218002A6876 /* Core Motion Data Collector Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43B7E1412DDA8218002A6876 /* Core Motion Data Collector Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B7E15D2DDA8218002A6876 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector Watch AppTests" */;
+			buildPhases = (
+				43B7E13E2DDA8218002A6876 /* Sources */,
+				43B7E13F2DDA8218002A6876 /* Frameworks */,
+				43B7E1402DDA8218002A6876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43B7E1442DDA8218002A6876 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				43B7E1452DDA8218002A6876 /* Core Motion Data Collector Tests */,
+			);
+			name = "Core Motion Data Collector Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Motion Data Collector Watch AppTests";
+			productReference = 43B7E1422DDA8218002A6876 /* Core Motion Data Collector Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43B7E14B2DDA8218002A6876 /* Core Motion Data Collector Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B7E1602DDA8218002A6876 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector Watch AppUITests" */;
+			buildPhases = (
+				43B7E1482DDA8218002A6876 /* Sources */,
+				43B7E1492DDA8218002A6876 /* Frameworks */,
+				43B7E14A2DDA8218002A6876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43B7E14E2DDA8218002A6876 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				43B7E14F2DDA8218002A6876 /* Core Motion Data Collector UITests */,
+			);
+			name = "Core Motion Data Collector Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Motion Data Collector Watch AppUITests";
+			productReference = 43B7E14C2DDA8218002A6876 /* Core Motion Data Collector Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43B7E1272DDA8217002A6876 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					43B7E12C2DDA8218002A6876 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					43B7E1322DDA8218002A6876 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					43B7E1412DDA8218002A6876 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 43B7E1322DDA8218002A6876;
+					};
+					43B7E14B2DDA8218002A6876 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 43B7E1322DDA8218002A6876;
+					};
+				};
+			};
+			buildConfigurationList = 43B7E12A2DDA8217002A6876 /* Build configuration list for PBXProject "Core Motion Data Collector" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43B7E1262DDA8217002A6876;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 43B7E12E2DDA8218002A6876 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43B7E12C2DDA8218002A6876 /* Core Motion Data Collector */,
+				43B7E1322DDA8218002A6876 /* Core Motion Data Collector Watch App */,
+				43B7E1412DDA8218002A6876 /* Core Motion Data Collector Watch AppTests */,
+				43B7E14B2DDA8218002A6876 /* Core Motion Data Collector Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43B7E12B2DDA8218002A6876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B7E1312DDA8218002A6876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B7E1402DDA8218002A6876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B7E14A2DDA8218002A6876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43B7E12F2DDA8218002A6876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B7E13E2DDA8218002A6876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43B7E1482DDA8218002A6876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43B7E1362DDA8218002A6876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43B7E1322DDA8218002A6876 /* Core Motion Data Collector Watch App */;
+			targetProxy = 43B7E1352DDA8218002A6876 /* PBXContainerItemProxy */;
+		};
+		43B7E1442DDA8218002A6876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43B7E1322DDA8218002A6876 /* Core Motion Data Collector Watch App */;
+			targetProxy = 43B7E1432DDA8218002A6876 /* PBXContainerItemProxy */;
+		};
+		43B7E14E2DDA8218002A6876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43B7E1322DDA8218002A6876 /* Core Motion Data Collector Watch App */;
+			targetProxy = 43B7E14D2DDA8218002A6876 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43B7E1542DDA8218002A6876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43B7E1552DDA8218002A6876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		43B7E1572DDA8218002A6876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Core Motion Data Collector";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Core Motion Data Collector collects your watch's motion data but does not share it with third parties.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Core-Motion-Data-Collector.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10;
+			};
+			name = Debug;
+		};
+		43B7E1582DDA8218002A6876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Core Motion Data Collector";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Core Motion Data Collector collects your watch's motion data but does not share it with third parties.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Core-Motion-Data-Collector.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10;
+			};
+			name = Release;
+		};
+		43B7E15B2DDA8218002A6876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				INFOPLIST_KEY_CFBundleDisplayName = "Motion Data Collector";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Motion-Data-Collector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		43B7E15C2DDA8218002A6876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				INFOPLIST_KEY_CFBundleDisplayName = "Motion Data Collector";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Motion-Data-Collector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43B7E15E2DDA8218002A6876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Motion-Data-Collector-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Core Motion Data Collector Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Core Motion Data Collector Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10;
+			};
+			name = Debug;
+		};
+		43B7E15F2DDA8218002A6876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Motion-Data-Collector-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Core Motion Data Collector Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Core Motion Data Collector Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10;
+			};
+			name = Release;
+		};
+		43B7E1612DDA8218002A6876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Motion-Data-Collector-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Motion Data Collector Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10;
+			};
+			name = Debug;
+		};
+		43B7E1622DDA8218002A6876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Motion-Data-Collector-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Motion Data Collector Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43B7E12A2DDA8217002A6876 /* Build configuration list for PBXProject "Core Motion Data Collector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B7E1542DDA8218002A6876 /* Debug */,
+				43B7E1552DDA8218002A6876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B7E1562DDA8218002A6876 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B7E1572DDA8218002A6876 /* Debug */,
+				43B7E1582DDA8218002A6876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B7E15A2DDA8218002A6876 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B7E15B2DDA8218002A6876 /* Debug */,
+				43B7E15C2DDA8218002A6876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B7E15D2DDA8218002A6876 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B7E15E2DDA8218002A6876 /* Debug */,
+				43B7E15F2DDA8218002A6876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43B7E1602DDA8218002A6876 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43B7E1612DDA8218002A6876 /* Debug */,
+				43B7E1622DDA8218002A6876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43B7E1272DDA8217002A6876 /* Project object */;
+}
