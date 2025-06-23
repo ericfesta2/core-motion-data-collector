@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainSettingsView: View {
-    private var settingsManager: SettingsManager
+    private let settingsManager: SettingsManager
 
     init(settingsManager: SettingsManager) {
         self.settingsManager = settingsManager

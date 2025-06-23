@@ -11,8 +11,8 @@ import os
 let logger = Logger()
 
 struct ContentView: View {
-    private var motionDataCollector = MotionDataCollector()
-    private var settingsManager = SettingsManager()
+    private let motionDataCollector = MotionDataCollector()
+    private let settingsManager = SettingsManager()
 
     var body: some View {
         #if targetEnvironment(simulator)
@@ -25,7 +25,9 @@ struct ContentView: View {
             NavigationStack {
                 VStack {
                     Text(!motionDataCollector.isCollectingData ? "Tap 'Start' to collect data." : "Collecting data. Check the debug logs...")
+
                     Spacer()
+
                     Button(!motionDataCollector.isCollectingData ? "Start" : "Stop") {
                         if !motionDataCollector.isCollectingData {
                             motionDataCollector.recordMotionData(freq: 1 / Double(settingsManager.frequencyHz), typesToRecord: settingsManager.enabledTypes)

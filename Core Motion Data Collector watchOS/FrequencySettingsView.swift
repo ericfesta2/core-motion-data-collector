@@ -10,10 +10,9 @@ import SwiftUI
 struct FrequencySettingsView: View {
     @Environment(\.dismiss) private var dismiss
 
-    private var settingsManager: SettingsManager
+    private let settingsManager: SettingsManager
 
     @State private var selectedFrequencyHz: Int
-    @FocusState private var isStepperFocused: Bool
 
     private static let MIN_FREQ_HZ = 10
     private static let MAX_FREQ_HZ = 100
@@ -24,8 +23,10 @@ struct FrequencySettingsView: View {
         self.selectedFrequencyHz = settingsManager.frequencyHz
     }
 
-    // Known bug: when this view appears, a warning log is emitted:
+    // Known bug: when this view appears, a warning log is emitted on both Simulator and a physical device:
     // "Crown Sequencer was set up without a view property. This will inevitably lead to incorrect crown indicator states"
+    // On physical devices, another warning log appears when scrolling the Stepper via Digital Crown:
+    // "overrelease of detent assertion detected"
     var body: some View {
         Stepper(
             value: self.$selectedFrequencyHz,
@@ -35,8 +36,6 @@ struct FrequencySettingsView: View {
             Text("\(self.selectedFrequencyHz) Hz")
                 .multilineTextAlignment(.center)
         }
-            .focusable(true)
-            .focused(self.$isStepperFocused)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") {
@@ -49,10 +48,6 @@ struct FrequencySettingsView: View {
             }
             .onAppear {
                 self.selectedFrequencyHz = self.settingsManager.frequencyHz
-                self.isStepperFocused = true
-            }
-            .onDisappear {
-                self.isStepperFocused = false
             }
     }
 }

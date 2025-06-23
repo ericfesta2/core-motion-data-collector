@@ -7,7 +7,7 @@
 
 import CoreMotion
 
-@Observable class MotionDataCollector {
+@Observable final class MotionDataCollector {
     private(set) var isError: Bool
     private(set) var isCollectingData: Bool
 
@@ -19,7 +19,7 @@ import CoreMotion
     }
 
     func recordMotionData(freq: Double, typesToRecord: Set<MotionDataType>) {
-        if self.isError {
+        guard !self.isError else {
             logger.error("Error collecting motion data - will not continue")
             return
         }
@@ -34,7 +34,7 @@ import CoreMotion
 
         motionManager.deviceMotionUpdateInterval = freq
         motionManager.startDeviceMotionUpdates(using: .xArbitraryZVertical, to: .main) { data, error in
-            if error != nil {
+            guard error == nil else {
                 logger.error("Error: \(String(describing: error))")
                 self.isError = true
                 return

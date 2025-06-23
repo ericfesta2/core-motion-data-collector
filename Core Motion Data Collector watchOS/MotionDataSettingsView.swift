@@ -10,7 +10,7 @@ import SwiftUI
 struct MotionDataSettingsView: View {
     @Environment(\.dismiss) private var dismiss
 
-    private var settingsManager: SettingsManager
+    private let settingsManager: SettingsManager
 
     @State private var typesToEnable: Set<MotionDataType>
 

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class SettingsManager {
+final class SettingsManager {
     private(set) var enabledTypes: Set<MotionDataType>
     private(set) var frequencyHz: Int
 
@@ -34,13 +34,10 @@ class SettingsManager {
         UserDefaults.standard.set(newValue, forKey: SettingsManager.FrequencyStorageKey)
     }
 
-    func restore() {
-        self.enabledTypes = SettingsManager.loadEnabledTypes()
-    }
-
     private static func loadEnabledTypes() -> Set<MotionDataType> {
         guard let savedTypes = UserDefaults.standard.data(forKey: SettingsManager.EnabledTypesStorageKey) else {
             logger.warning("No saved types found. Defaulting to all types.")
+
             return Set(MotionDataType.allCases)
         }
 
