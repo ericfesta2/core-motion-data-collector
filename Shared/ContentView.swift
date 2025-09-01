@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Motion Data Collector Watch App
+//  Core Motion Data Collector
 //
-//  Created by Eric Festa on 5/18/25.
+//  Created by Eric Festa on 9/1/25.
 //
 
 import SwiftUI
@@ -23,8 +23,12 @@ struct ContentView: View {
 
         if !hasMotionError {
             NavigationStack {
+                #if os(watchOS)
                 VStack {
-                    Text(!motionDataCollector.isCollectingData ? "Tap 'Start' to collect data." : "Collecting data. Check the debug logs...")
+                    Text(!motionDataCollector.isCollectingData ?
+                         "Tap 'Start' to collect data." :
+                        "Collecting data. Check the debug logs..."
+                    )
 
                     Spacer()
 
@@ -44,6 +48,35 @@ struct ContentView: View {
                             }
                         }
                     }
+                #else
+                VStack(spacing: 20) {
+                    Text(!motionDataCollector.isCollectingData ?
+                        "Tap 'Start' to collect data." :
+                        "Collecting data. Check the debug logs..."
+                    )
+                        .font(.largeTitle)
+                        .bold()
+                        .multilineTextAlignment(.center)
+
+                    Button(!motionDataCollector.isCollectingData ? "Start" : "Stop") {
+                        if !motionDataCollector.isCollectingData {
+                            motionDataCollector.recordMotionData(freq: 1 / Double(settingsManager.frequencyHz), typesToRecord: settingsManager.enabledTypes)
+                        } else {
+                            motionDataCollector.stopMotionData()
+                        }
+                    }
+                        .buttonStyle(.borderedProminent)
+                        .controlSize(.large)
+                }
+                    .padding()
+                    .toolbar {
+                        ToolbarItem(placement: .confirmationAction) {
+                            NavigationLink(destination: MainSettingsView(settingsManager: settingsManager)) {
+                                Text("Settings")
+                            }
+                        }
+                    }
+                #endif
             }
         } else {
             Text("Motion data unavailable. Quit the app and try again.")

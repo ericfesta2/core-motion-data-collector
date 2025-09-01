@@ -11,6 +11,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		431DF2442E6647770044DC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B7E1272DDA8217002A6876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 431DF2362E6647760044DC50;
+			remoteInfo = "Core Motion Data Collector iOS";
+		};
+		431DF24E2E6647770044DC50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43B7E1272DDA8217002A6876 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 431DF2362E6647760044DC50;
+			remoteInfo = "Core Motion Data Collector iOS";
+		};
 		43B7E1352DDA8218002A6876 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 43B7E1272DDA8217002A6876 /* Project object */;
@@ -49,6 +63,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		431DF2372E6647760044DC50 /* Core Motion Data Collector iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Motion Data Collector iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		431DF2432E6647770044DC50 /* Core Motion Data Collector iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core Motion Data Collector iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		431DF24D2E6647770044DC50 /* Core Motion Data Collector iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core Motion Data Collector iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B7E12D2DDA8218002A6876 /* Core Motion Data Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Motion Data Collector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B7E1332DDA8218002A6876 /* Core Motion Data Collector Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Motion Data Collector Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B7E1422DDA8218002A6876 /* Core Motion Data Collector Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Core Motion Data Collector Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +74,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		431DF2382E6647760044DC50 /* Core Motion Data Collector iOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Core Motion Data Collector iOS";
+			sourceTree = "<group>";
+		};
+		431DF2462E6647770044DC50 /* Core Motion Data Collector iOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Core Motion Data Collector iOSTests";
+			sourceTree = "<group>";
+		};
+		431DF2502E6647770044DC50 /* Core Motion Data Collector iOSUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Core Motion Data Collector iOSUITests";
+			sourceTree = "<group>";
+		};
 		43B7E1372DDA8218002A6876 /* Core Motion Data Collector watchOS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Core Motion Data Collector watchOS";
@@ -72,9 +104,35 @@
 			path = "Core Motion Data Collector UITests";
 			sourceTree = "<group>";
 		};
+		43F340302E664D8100E68CC4 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		431DF2342E6647760044DC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431DF2402E6647770044DC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431DF24A2E6647770044DC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43B7E1302DDA8218002A6876 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,9 +160,13 @@
 		43B7E1262DDA8217002A6876 = {
 			isa = PBXGroup;
 			children = (
+				43F340302E664D8100E68CC4 /* Shared */,
 				43B7E1372DDA8218002A6876 /* Core Motion Data Collector watchOS */,
 				43B7E1452DDA8218002A6876 /* Core Motion Data Collector Tests */,
 				43B7E14F2DDA8218002A6876 /* Core Motion Data Collector UITests */,
+				431DF2382E6647760044DC50 /* Core Motion Data Collector iOS */,
+				431DF2462E6647770044DC50 /* Core Motion Data Collector iOSTests */,
+				431DF2502E6647770044DC50 /* Core Motion Data Collector iOSUITests */,
 				43B7E1632DDA8F70002A6876 /* Frameworks */,
 				43B7E12E2DDA8218002A6876 /* Products */,
 			);
@@ -117,6 +179,9 @@
 				43B7E1332DDA8218002A6876 /* Core Motion Data Collector Watch App.app */,
 				43B7E1422DDA8218002A6876 /* Core Motion Data Collector Watch AppTests.xctest */,
 				43B7E14C2DDA8218002A6876 /* Core Motion Data Collector Watch AppUITests.xctest */,
+				431DF2372E6647760044DC50 /* Core Motion Data Collector iOS.app */,
+				431DF2432E6647770044DC50 /* Core Motion Data Collector iOSTests.xctest */,
+				431DF24D2E6647770044DC50 /* Core Motion Data Collector iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +197,75 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		431DF2362E6647760044DC50 /* Core Motion Data Collector iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 431DF25B2E6647770044DC50 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector iOS" */;
+			buildPhases = (
+				431DF2332E6647760044DC50 /* Sources */,
+				431DF2342E6647760044DC50 /* Frameworks */,
+				431DF2352E6647760044DC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				431DF2382E6647760044DC50 /* Core Motion Data Collector iOS */,
+				43F340302E664D8100E68CC4 /* Shared */,
+			);
+			name = "Core Motion Data Collector iOS";
+			packageProductDependencies = (
+			);
+			productName = "Core Motion Data Collector iOS";
+			productReference = 431DF2372E6647760044DC50 /* Core Motion Data Collector iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		431DF2422E6647770044DC50 /* Core Motion Data Collector iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 431DF25C2E6647770044DC50 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector iOSTests" */;
+			buildPhases = (
+				431DF23F2E6647770044DC50 /* Sources */,
+				431DF2402E6647770044DC50 /* Frameworks */,
+				431DF2412E6647770044DC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				431DF2452E6647770044DC50 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				431DF2462E6647770044DC50 /* Core Motion Data Collector iOSTests */,
+			);
+			name = "Core Motion Data Collector iOSTests";
+			packageProductDependencies = (
+			);
+			productName = "Core Motion Data Collector iOSTests";
+			productReference = 431DF2432E6647770044DC50 /* Core Motion Data Collector iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		431DF24C2E6647770044DC50 /* Core Motion Data Collector iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 431DF25D2E6647770044DC50 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector iOSUITests" */;
+			buildPhases = (
+				431DF2492E6647770044DC50 /* Sources */,
+				431DF24A2E6647770044DC50 /* Frameworks */,
+				431DF24B2E6647770044DC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				431DF24F2E6647770044DC50 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				431DF2502E6647770044DC50 /* Core Motion Data Collector iOSUITests */,
+			);
+			name = "Core Motion Data Collector iOSUITests";
+			packageProductDependencies = (
+			);
+			productName = "Core Motion Data Collector iOSUITests";
+			productReference = 431DF24D2E6647770044DC50 /* Core Motion Data Collector iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		43B7E12C2DDA8218002A6876 /* Core Motion Data Collector */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43B7E15A2DDA8218002A6876 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector" */;
@@ -165,6 +299,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				43B7E1372DDA8218002A6876 /* Core Motion Data Collector watchOS */,
+				43F340302E664D8100E68CC4 /* Shared */,
 			);
 			name = "Core Motion Data Collector Watch App";
 			packageProductDependencies = (
@@ -226,9 +361,20 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1630;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
+					431DF2362E6647760044DC50 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					431DF2422E6647770044DC50 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 431DF2362E6647760044DC50;
+					};
+					431DF24C2E6647770044DC50 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 431DF2362E6647760044DC50;
+					};
 					43B7E12C2DDA8218002A6876 = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -263,11 +409,35 @@
 				43B7E1322DDA8218002A6876 /* Core Motion Data Collector Watch App */,
 				43B7E1412DDA8218002A6876 /* Core Motion Data Collector Watch AppTests */,
 				43B7E14B2DDA8218002A6876 /* Core Motion Data Collector Watch AppUITests */,
+				431DF2362E6647760044DC50 /* Core Motion Data Collector iOS */,
+				431DF2422E6647770044DC50 /* Core Motion Data Collector iOSTests */,
+				431DF24C2E6647770044DC50 /* Core Motion Data Collector iOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		431DF2352E6647760044DC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431DF2412E6647770044DC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431DF24B2E6647770044DC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43B7E12B2DDA8218002A6876 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +469,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		431DF2332E6647760044DC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431DF23F2E6647770044DC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		431DF2492E6647770044DC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43B7E12F2DDA8218002A6876 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,6 +514,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		431DF2452E6647770044DC50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 431DF2362E6647760044DC50 /* Core Motion Data Collector iOS */;
+			targetProxy = 431DF2442E6647770044DC50 /* PBXContainerItemProxy */;
+		};
+		431DF24F2E6647770044DC50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 431DF2362E6647760044DC50 /* Core Motion Data Collector iOS */;
+			targetProxy = 431DF24E2E6647770044DC50 /* PBXContainerItemProxy */;
+		};
 		43B7E1362DDA8218002A6876 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 43B7E1322DDA8218002A6876 /* Core Motion Data Collector Watch App */;
@@ -341,6 +542,147 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		431DF2552E6647770044DC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Core-Motion-Data-Collector-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		431DF2562E6647770044DC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Core-Motion-Data-Collector-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		431DF2572E6647770044DC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Core-Motion-Data-Collector-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Core Motion Data Collector iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Core Motion Data Collector iOS";
+			};
+			name = Debug;
+		};
+		431DF2582E6647770044DC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Core-Motion-Data-Collector-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Core Motion Data Collector iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Core Motion Data Collector iOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		431DF2592E6647770044DC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Core-Motion-Data-Collector-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Core Motion Data Collector iOS";
+			};
+			name = Debug;
+		};
+		431DF25A2E6647770044DC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G663L53KQ7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "solutions.efcomputing.Core-Motion-Data-Collector-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Core Motion Data Collector iOS";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		43B7E1542DDA8218002A6876 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -636,6 +978,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		431DF25B2E6647770044DC50 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				431DF2552E6647770044DC50 /* Debug */,
+				431DF2562E6647770044DC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		431DF25C2E6647770044DC50 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				431DF2572E6647770044DC50 /* Debug */,
+				431DF2582E6647770044DC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		431DF25D2E6647770044DC50 /* Build configuration list for PBXNativeTarget "Core Motion Data Collector iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				431DF2592E6647770044DC50 /* Debug */,
+				431DF25A2E6647770044DC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		43B7E12A2DDA8217002A6876 /* Build configuration list for PBXProject "Core Motion Data Collector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

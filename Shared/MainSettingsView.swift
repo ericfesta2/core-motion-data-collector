@@ -15,6 +15,7 @@ struct MainSettingsView: View {
     }
 
     var body: some View {
+        #if os(watchOS)
         NavigationLink(destination: MotionDataSettingsView(settingsManager: self.settingsManager)) {
             Text("Data to Collect")
                 .multilineTextAlignment(.center)
@@ -24,5 +25,18 @@ struct MainSettingsView: View {
             Text("Frequency")
                 .multilineTextAlignment(.center)
         }
+        #else
+        List {
+            NavigationLink(destination: MotionDataSettingsView(settingsManager: self.settingsManager)) {
+                Text("Data to Collect")
+                    .multilineTextAlignment(.center)
+            }
+
+            NavigationLink(destination: FrequencySettingsView(settingsManager: self.settingsManager)) {
+                Text("Frequency")
+                    .multilineTextAlignment(.center)
+            }
+        }
+        #endif
     }
 }

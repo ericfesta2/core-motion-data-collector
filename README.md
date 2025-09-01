@@ -9,7 +9,7 @@ Core Motion Data Collector makes it easy to obtain Core Motion data from an Appl
 
 ## Limitations
 
-* Subject to change, this project is designed exclusively for watchOS to collect motion data from an Apple Watch. No iOS app for collecting iPhone motion data is available.
+* This project only supports collecting motion data from an Apple Watch running a supported version of watchOS. An iOS counterpart app for collecting iPhone motion data is coming soon!
 * The app only prints Core Motion data to Xcode's debug window when run through Xcode, so data can't be collected when the app is run outside of Xcode; CSV export/saving is not supported.
 * Magnetometer data is not included in the collected Core Motion data types.
 
