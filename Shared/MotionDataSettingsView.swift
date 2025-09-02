@@ -10,11 +10,11 @@ import SwiftUI
 struct MotionDataSettingsView: View {
     @Environment(\.dismiss) private var dismiss
 
-    private let HeaderTitle = "Motion data to collect"
-
     private let settingsManager: SettingsManager
 
     @State private var typesToEnable: Set<MotionDataType>
+
+    private static let HeaderTitle = "Motion data to collect"
 
     init(settingsManager: SettingsManager) {
         self.settingsManager = settingsManager
@@ -85,7 +85,7 @@ struct MotionDataSettingsView: View {
                 self.typesToEnable = self.settingsManager.enabledTypes
             }
             #if os(iOS)
-            .navigationBarTitle(HeaderTitle)
+            .navigationBarTitle(MotionDataSettingsView.HeaderTitle)
             .navigationBarTitleDisplayMode(.large)
             #endif
     }

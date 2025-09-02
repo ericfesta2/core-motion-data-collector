@@ -14,9 +14,10 @@ struct FrequencySettingsView: View {
 
     @State private var selectedFrequencyHz: Int
 
-    private static let MIN_FREQ_HZ = 10
-    private static let MAX_FREQ_HZ = 100
-    private static let FREQ_STEP_HZ = 10
+    private static let HeaderTitle = "Frequency"
+    private static let MinFreqHz = 10
+    private static let MaxFreqHz = 100
+    private static let FreqStepHz = 10
 
     init(settingsManager: SettingsManager) {
         self.settingsManager = settingsManager
@@ -28,13 +29,24 @@ struct FrequencySettingsView: View {
     // On physical devices, another warning log appears when scrolling the Stepper via Digital Crown:
     // "overrelease of detent assertion detected"
     var body: some View {
-        Stepper(
-            value: self.$selectedFrequencyHz,
-            in: FrequencySettingsView.MIN_FREQ_HZ...FrequencySettingsView.MAX_FREQ_HZ,
-            step: FrequencySettingsView.FREQ_STEP_HZ
-        ) {
-            Text("\(self.selectedFrequencyHz) Hz")
-                .multilineTextAlignment(.center)
+        VStack {
+            #if os(watchOS)
+            Stepper(
+                value: self.$selectedFrequencyHz,
+                in: FrequencySettingsView.MinFreqHz...FrequencySettingsView.MaxFreqHz,
+                step: FrequencySettingsView.FreqStepHz
+            ) {
+                Text("\(self.selectedFrequencyHz) Hz")
+                    .multilineTextAlignment(.center)
+            }
+            #else
+            Picker("Frequency", selection: self.$selectedFrequencyHz) {
+                ForEach(Array(stride(from: FrequencySettingsView.MinFreqHz, to: FrequencySettingsView.MaxFreqHz + 1, by: FrequencySettingsView.FreqStepHz)), id: \.self) {
+                    Text("\($0) Hz")
+                }
+            }
+                .pickerStyle(.wheel)
+            #endif
         }
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
@@ -42,12 +54,16 @@ struct FrequencySettingsView: View {
                         self.settingsManager.saveFrequency(newValue: self.selectedFrequencyHz)
                         self.dismiss()
                     }
-                        .disabled(self.selectedFrequencyHz < FrequencySettingsView.MIN_FREQ_HZ)
+                        .disabled(self.selectedFrequencyHz < FrequencySettingsView.MinFreqHz || self.selectedFrequencyHz > FrequencySettingsView.MaxFreqHz)
                         .handGestureShortcutIfAvailable()
                 }
             }
             .onAppear {
                 self.selectedFrequencyHz = self.settingsManager.frequencyHz
             }
+            #if os(iOS)
+            .navigationBarTitle(FrequencySettingsView.HeaderTitle)
+            .navigationBarTitleDisplayMode(.large)
+            #endif
     }
 }
