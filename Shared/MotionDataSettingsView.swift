@@ -62,7 +62,7 @@ struct MotionDataSettingsView: View {
     var body: some View {
         List {
             #if os(watchOS)
-            Section(header: Text(HeaderTitle)) {
+            Section(header: Text(MotionDataSettingsView.HeaderTitle)) {
                 settingsList
                     .listRowBackground(Color.clear)
                     .listRowInsets(EdgeInsets())
