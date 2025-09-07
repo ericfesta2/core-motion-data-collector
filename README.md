@@ -22,7 +22,7 @@ Core Motion Data Collector makes it easy to obtain Core Motion data from an iPho
 2. Ensure that a supported iPhone and/or Apple Watch is registered with Xcode so that Core Motion Data Collector can be run on it through Xcode.
 3. Select the desired app (iOS or watchOS) in Xcode's top bar, then click the Run button in Xcode's left sidebar to install and run the app on your device (the first installation may take some time, especially with wireless iPhone connections and Apple Watch).
 4. (Optional) In the app, tap the settings button to configure the types of motion data to include in the CSV output and/or the frequency of data collection.
-5. On the app's main screen, tap the "Start" button (or double tap on Apple Watch Series 9 or newer running watchOS 10.1 or newer) to begin collecting motion data as soon as you press the button
-6. When finished, tap the "Stop" button (or double tap, if supported) to stop collecting motion data
-7. Copy the emitted data from Xcode's debug window into an empty text file, and save it as a CSV
+5. On the app's main screen, tap the "Start" button (or double tap on Apple Watch Series 9 or newer running watchOS 10.1 or newer) to begin collecting motion data as soon as you press the button.
+6. When finished, tap the "Stop" button (or double tap, if supported) to stop collecting motion data.
+7. Copy the emitted data from Xcode's debug window into an empty text file, and save it as a CSV.
 
