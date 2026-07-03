@@ -14,7 +14,7 @@ struct MotionDataSettingsView: View {
 
     @State private var typesToEnable: Set<MotionDataType>
 
-    private static let HeaderTitle = "Motion data to collect"
+    private static let HeaderTitle = "Motion Data to Collect"
 
     init(settingsManager: SettingsManager) {
         self.settingsManager = settingsManager

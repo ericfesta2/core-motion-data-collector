@@ -29,7 +29,7 @@ struct AboutSettingsView: View {
             Text("")
             #endif
 
-            Text("Copyright &copy; 2025 Eric Festa")
+            Text("Copyright &copy; 2025-\(Date.now.formatted(.dateTime.year())) Eric Festa")
         }
             .multilineTextAlignment(.center)
             #if !os(watchOS)
