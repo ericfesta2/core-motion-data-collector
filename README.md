@@ -6,9 +6,9 @@ Core Motion Data Collector makes it easy to obtain Core Motion data from an iPho
 
 ## Requirements
 
-* Xcode 16.4 (recommended, though the app might also be compatible with other recent versions) and a compatible iPhone
-* iOS 15.6+ (theoretically - only tested on the iOS 26.0 betas so far)
-* watchOS 10+ (theoretically - only tested on watchOS 11.5 so far)
+* Xcode 16.4+ (recommended, though the app might also be compatible with other recent versions) and a compatible iPhone
+* iOS 15.6+ (theoretically - only tested on iOS 26 stable and 27 betas so far)
+* watchOS 10+ (theoretically - only tested on watchOS 11.5 and 26 so far)
 
 ## Limitations
 
