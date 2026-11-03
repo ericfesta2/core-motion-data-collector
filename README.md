@@ -2,13 +2,15 @@
 
 Core Motion Data Collector makes it easy to obtain Core Motion data from an iPhone or Apple Watch in an accessible CSV format, ideal for analyzing user activity or training ML models. The types of data to include in the CSV output as well as the frequency at which they're collected can be configured within both the iOS and watchOS apps (separately from one another).
 
+**New, November 2026:** iPhone Duo optimization - the settings screen now displays next to the main screen when the device is unfolded. 
+
 **New, September 2025:** iOS support! Core Motion Data Collector can now be run on both watchOS and iOS to collect motion data from either platform.
 
 ## Requirements
 
 * Xcode 16.4+ (recommended, though the app might also be compatible with other recent versions) and a compatible iPhone
-* iOS 15.6+ (theoretically - only tested on iOS 26 stable and 27 betas so far)
-* watchOS 10+ (theoretically - only tested on watchOS 11.5 and 26 so far)
+* iOS 15.6+ (theoretically - only tested on iOS 26 and 27)
+* watchOS 10+ (theoretically - only tested on watchOS 11.5, 26, and 27)
 
 ## Limitations
 

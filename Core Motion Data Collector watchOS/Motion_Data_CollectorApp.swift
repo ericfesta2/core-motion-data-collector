@@ -11,7 +11,7 @@ import SwiftUI
 struct Motion_Data_Collector_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainViewWrap()
         }
     }
 }
