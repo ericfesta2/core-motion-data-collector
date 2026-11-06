@@ -28,20 +28,21 @@ struct MainViewWrap: View {
         let hasMotionError = motionDataCollector.isError
         #endif
 
+        let horizontalSizeClassNonNil = (horizontalSizeClass ?? .compact) // horizontalSizeClass may be nil on watchOS
+
         if !hasMotionError {
-            #if !os(watchOS)
-            if #available(iOS 27.1, *) {
+            if #available(iOS 27.1, watchOS 27.1, *) {
                 let baseArrangementView = ArrangementView {
                     NavigationStack {
                         MainView(
                             motionDataCollector: motionDataCollector,
                             settingsManager: settingsManager,
-                            openSettingsWithButton: horizontalSizeClass == .compact
+                            openSettingsWithButton: horizontalSizeClassNonNil == .compact
                         )
                     }
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                 } secondary: {
-                    if (horizontalSizeClass == .regular) {
+                    if (horizontalSizeClassNonNil == .regular) {
                         NavigationStack {
                             MainSettingsView(settingsManager: settingsManager)
                                 .navigationTitle("Settings")
@@ -49,30 +50,21 @@ struct MainViewWrap: View {
                     }
                 }
 
-                if (horizontalSizeClass == .regular) {
-                    baseArrangementView
-                } else {
+                if (horizontalSizeClassNonNil == .compact) {
                     baseArrangementView
                         .arrangementViewStyle(.overlay)
+                } else {
+                    baseArrangementView
                 }
             } else {
                 NavigationStack {
                     MainView(
                         motionDataCollector: motionDataCollector,
                         settingsManager: settingsManager,
-                        openSettingsWithButton: horizontalSizeClass == .compact
+                        openSettingsWithButton: horizontalSizeClassNonNil == .compact
                     )
                 }
             }
-            #else
-            NavigationStack {
-                MainView(
-                    motionDataCollector: motionDataCollector,
-                    settingsManager: settingsManager,
-                    openSettingsWithButton: true
-                )
-            }
-            #endif
         } else {
             Text("Motion data unavailable. Quit the app and try again.")
                 .multilineTextAlignment(.center)
